@@ -49,6 +49,30 @@
 		98A8E9D52179797A000053FE /* HiddenNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A8E9D42179797A000053FE /* HiddenNavController.m */; };
 		98A8E9D821797F9B000053FE /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A8E9D621797F9A000053FE /* UINavigationBar+Awesome.m */; };
 		98A8E9DA217980D0000053FE /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 98A8E9D9217980D0000053FE /* bg.jpg */; };
+		98A8E9DE2179B03B000053FE /* AliPayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A8E9DD2179B03B000053FE /* AliPayController.m */; };
+		98A8E9E22179B397000053FE /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A8E9E12179B397000053FE /* UIView+Frame.m */; };
+		98A8E9E82179C780000053FE /* HeadBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A8E9E72179C780000053FE /* HeadBtnView.m */; };
+		98A8E9F52179C878000053FE /* addMore@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A8E9EA2179C878000053FE /* addMore@2x.png */; };
+		98A8E9F62179C878000053FE /* adressBook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A8E9EB2179C878000053FE /* adressBook@2x.png */; };
+		98A8E9F72179C878000053FE /* cardsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A8E9EC2179C878000053FE /* cardsIcon@2x.png */; };
+		98A8E9F82179C878000053FE /* collectMoney@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A8E9ED2179C878000053FE /* collectMoney@2x.png */; };
+		98A8E9F92179C878000053FE /* littleCollectMoney@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A8E9EE2179C878000053FE /* littleCollectMoney@2x.png */; };
+		98A8E9FA2179C878000053FE /* littleScan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A8E9EF2179C878000053FE /* littleScan@2x.png */; };
+		98A8E9FB2179C878000053FE /* littleSearch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A8E9F02179C878000053FE /* littleSearch@2x.png */; };
+		98A8E9FC2179C878000053FE /* mmmmmmmm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A8E9F12179C878000053FE /* mmmmmmmm@2x.png */; };
+		98A8E9FD2179C878000053FE /* payIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A8E9F22179C878000053FE /* payIcon@2x.png */; };
+		98A8E9FE2179C878000053FE /* scanIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A8E9F32179C878000053FE /* scanIcon@2x.png */; };
+		98A8E9FF2179C878000053FE /* transferMoney@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A8E9F42179C878000053FE /* transferMoney@2x.png */; };
+		98A8EA022179D08B000053FE /* PayCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A8EA012179D08B000053FE /* PayCollectionViewCell.m */; };
+		98A8EA052179D854000053FE /* NaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A8EA042179D854000053FE /* NaView.m */; };
+		98A8EA172179DB76000053FE /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 98A8EA072179DB76000053FE /* MJRefresh.bundle */; };
+		98A8EA182179DB76000053FE /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A8EA0A2179DB76000053FE /* MJRefreshBaseView.m */; };
+		98A8EA192179DB76000053FE /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A8EA0C2179DB76000053FE /* MJRefreshConst.m */; };
+		98A8EA1A2179DB76000053FE /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A8EA0E2179DB76000053FE /* MJRefreshFooterView.m */; };
+		98A8EA1B2179DB76000053FE /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A8EA102179DB76000053FE /* MJRefreshHeaderView.m */; };
+		98A8EA1C2179DB76000053FE /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A8EA122179DB76000053FE /* UIScrollView+MJExtension.m */; };
+		98A8EA1D2179DB76000053FE /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A8EA142179DB76000053FE /* UIScrollView+MJRefresh.m */; };
+		98A8EA1E2179DB76000053FE /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A8EA162179DB76000053FE /* UIView+MJExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +177,43 @@
 		98A8E9D621797F9A000053FE /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
 		98A8E9D721797F9B000053FE /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
 		98A8E9D9217980D0000053FE /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		98A8E9DC2179B03B000053FE /* AliPayController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliPayController.h; sourceTree = "<group>"; };
+		98A8E9DD2179B03B000053FE /* AliPayController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliPayController.m; sourceTree = "<group>"; };
+		98A8E9E02179B397000053FE /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		98A8E9E12179B397000053FE /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		98A8E9E62179C780000053FE /* HeadBtnView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeadBtnView.h; sourceTree = "<group>"; };
+		98A8E9E72179C780000053FE /* HeadBtnView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeadBtnView.m; sourceTree = "<group>"; };
+		98A8E9EA2179C878000053FE /* addMore@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addMore@2x.png"; sourceTree = "<group>"; };
+		98A8E9EB2179C878000053FE /* adressBook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adressBook@2x.png"; sourceTree = "<group>"; };
+		98A8E9EC2179C878000053FE /* cardsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cardsIcon@2x.png"; sourceTree = "<group>"; };
+		98A8E9ED2179C878000053FE /* collectMoney@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "collectMoney@2x.png"; sourceTree = "<group>"; };
+		98A8E9EE2179C878000053FE /* littleCollectMoney@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "littleCollectMoney@2x.png"; sourceTree = "<group>"; };
+		98A8E9EF2179C878000053FE /* littleScan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "littleScan@2x.png"; sourceTree = "<group>"; };
+		98A8E9F02179C878000053FE /* littleSearch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "littleSearch@2x.png"; sourceTree = "<group>"; };
+		98A8E9F12179C878000053FE /* mmmmmmmm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mmmmmmmm@2x.png"; sourceTree = "<group>"; };
+		98A8E9F22179C878000053FE /* payIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "payIcon@2x.png"; sourceTree = "<group>"; };
+		98A8E9F32179C878000053FE /* scanIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scanIcon@2x.png"; sourceTree = "<group>"; };
+		98A8E9F42179C878000053FE /* transferMoney@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transferMoney@2x.png"; sourceTree = "<group>"; };
+		98A8EA002179D08B000053FE /* PayCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayCollectionViewCell.h; sourceTree = "<group>"; };
+		98A8EA012179D08B000053FE /* PayCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayCollectionViewCell.m; sourceTree = "<group>"; };
+		98A8EA032179D854000053FE /* NaView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NaView.h; sourceTree = "<group>"; };
+		98A8EA042179D854000053FE /* NaView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NaView.m; sourceTree = "<group>"; };
+		98A8EA072179DB76000053FE /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
+		98A8EA082179DB76000053FE /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
+		98A8EA092179DB76000053FE /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
+		98A8EA0A2179DB76000053FE /* MJRefreshBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBaseView.m; sourceTree = "<group>"; };
+		98A8EA0B2179DB76000053FE /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConst.h; sourceTree = "<group>"; };
+		98A8EA0C2179DB76000053FE /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
+		98A8EA0D2179DB76000053FE /* MJRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooterView.h; sourceTree = "<group>"; };
+		98A8EA0E2179DB76000053FE /* MJRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooterView.m; sourceTree = "<group>"; };
+		98A8EA0F2179DB76000053FE /* MJRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeaderView.h; sourceTree = "<group>"; };
+		98A8EA102179DB76000053FE /* MJRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeaderView.m; sourceTree = "<group>"; };
+		98A8EA112179DB76000053FE /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
+		98A8EA122179DB76000053FE /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
+		98A8EA132179DB76000053FE /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
+		98A8EA142179DB76000053FE /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
+		98A8EA152179DB76000053FE /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
+		98A8EA162179DB76000053FE /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +266,10 @@
 		98892506216DE7D3002750DC /* cellAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				98A8EA062179DB76000053FE /* MJRefresh */,
+				98A8E9E92179C878000053FE /* Image */,
+				98A8E9E02179B397000053FE /* UIView+Frame.h */,
+				98A8E9E12179B397000053FE /* UIView+Frame.m */,
 				98A8E9D9217980D0000053FE /* bg.jpg */,
 				98A8E9D721797F9B000053FE /* UINavigationBar+Awesome.h */,
 				98A8E9D621797F9A000053FE /* UINavigationBar+Awesome.m */,
@@ -233,12 +298,8 @@
 				986A395A2176C302003FF1BB /* DrawView.m */,
 				986A395C2176D5DE003FF1BB /* MOdalPopController.h */,
 				986A395D2176D5DE003FF1BB /* MOdalPopController.m */,
-				98A8E9CA21797225000053FE /* ScrollCellHidddenController.h */,
-				98A8E9CB21797225000053FE /* ScrollCellHidddenController.m */,
-				98A8E9D0217976F6000053FE /* HIdeenNavigationController.h */,
-				98A8E9D1217976F6000053FE /* HIdeenNavigationController.m */,
-				98A8E9D32179797A000053FE /* HiddenNavController.h */,
-				98A8E9D42179797A000053FE /* HiddenNavController.m */,
+				98A8E9DF2179B043000053FE /* AliPay */,
+				98A8E9DB2179AFB0000053FE /* HideenNav */,
 				986A395F2176DA59003FF1BB /* CellPch.pch */,
 				986A39602176DA60003FF1BB /* Header.h */,
 				988DC5CB21746E3B00298A1D /* mjExtension */,
@@ -326,6 +387,75 @@
 			);
 			name = mjExtension;
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		98A8E9DB2179AFB0000053FE /* HideenNav */ = {
+			isa = PBXGroup;
+			children = (
+				98A8E9CA21797225000053FE /* ScrollCellHidddenController.h */,
+				98A8E9CB21797225000053FE /* ScrollCellHidddenController.m */,
+				98A8E9D0217976F6000053FE /* HIdeenNavigationController.h */,
+				98A8E9D1217976F6000053FE /* HIdeenNavigationController.m */,
+				98A8E9D32179797A000053FE /* HiddenNavController.h */,
+				98A8E9D42179797A000053FE /* HiddenNavController.m */,
+			);
+			path = HideenNav;
+			sourceTree = "<group>";
+		};
+		98A8E9DF2179B043000053FE /* AliPay */ = {
+			isa = PBXGroup;
+			children = (
+				98A8E9DC2179B03B000053FE /* AliPayController.h */,
+				98A8E9DD2179B03B000053FE /* AliPayController.m */,
+				98A8EA002179D08B000053FE /* PayCollectionViewCell.h */,
+				98A8EA012179D08B000053FE /* PayCollectionViewCell.m */,
+				98A8E9E62179C780000053FE /* HeadBtnView.h */,
+				98A8E9E72179C780000053FE /* HeadBtnView.m */,
+				98A8EA032179D854000053FE /* NaView.h */,
+				98A8EA042179D854000053FE /* NaView.m */,
+			);
+			path = AliPay;
+			sourceTree = "<group>";
+		};
+		98A8E9E92179C878000053FE /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				98A8E9EA2179C878000053FE /* addMore@2x.png */,
+				98A8E9EB2179C878000053FE /* adressBook@2x.png */,
+				98A8E9EC2179C878000053FE /* cardsIcon@2x.png */,
+				98A8E9ED2179C878000053FE /* collectMoney@2x.png */,
+				98A8E9EE2179C878000053FE /* littleCollectMoney@2x.png */,
+				98A8E9EF2179C878000053FE /* littleScan@2x.png */,
+				98A8E9F02179C878000053FE /* littleSearch@2x.png */,
+				98A8E9F12179C878000053FE /* mmmmmmmm@2x.png */,
+				98A8E9F22179C878000053FE /* payIcon@2x.png */,
+				98A8E9F32179C878000053FE /* scanIcon@2x.png */,
+				98A8E9F42179C878000053FE /* transferMoney@2x.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		98A8EA062179DB76000053FE /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				98A8EA072179DB76000053FE /* MJRefresh.bundle */,
+				98A8EA082179DB76000053FE /* MJRefresh.h */,
+				98A8EA092179DB76000053FE /* MJRefreshBaseView.h */,
+				98A8EA0A2179DB76000053FE /* MJRefreshBaseView.m */,
+				98A8EA0B2179DB76000053FE /* MJRefreshConst.h */,
+				98A8EA0C2179DB76000053FE /* MJRefreshConst.m */,
+				98A8EA0D2179DB76000053FE /* MJRefreshFooterView.h */,
+				98A8EA0E2179DB76000053FE /* MJRefreshFooterView.m */,
+				98A8EA0F2179DB76000053FE /* MJRefreshHeaderView.h */,
+				98A8EA102179DB76000053FE /* MJRefreshHeaderView.m */,
+				98A8EA112179DB76000053FE /* UIScrollView+MJExtension.h */,
+				98A8EA122179DB76000053FE /* UIScrollView+MJExtension.m */,
+				98A8EA132179DB76000053FE /* UIScrollView+MJRefresh.h */,
+				98A8EA142179DB76000053FE /* UIScrollView+MJRefresh.m */,
+				98A8EA152179DB76000053FE /* UIView+MJExtension.h */,
+				98A8EA162179DB76000053FE /* UIView+MJExtension.m */,
+			);
+			path = MJRefresh;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,10 +561,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98A8E9FC2179C878000053FE /* mmmmmmmm@2x.png in Resources */,
+				98A8E9FB2179C878000053FE /* littleSearch@2x.png in Resources */,
+				98A8E9FD2179C878000053FE /* payIcon@2x.png in Resources */,
+				98A8E9F92179C878000053FE /* littleCollectMoney@2x.png in Resources */,
+				98A8E9F62179C878000053FE /* adressBook@2x.png in Resources */,
 				98A8E9DA217980D0000053FE /* bg.jpg in Resources */,
+				98A8E9FA2179C878000053FE /* littleScan@2x.png in Resources */,
 				988DC5AE217432D600298A1D /* Info.plist in Resources */,
+				98A8E9F72179C878000053FE /* cardsIcon@2x.png in Resources */,
 				98892514216DE7DF002750DC /* LaunchScreen.storyboard in Resources */,
+				98A8E9F52179C878000053FE /* addMore@2x.png in Resources */,
+				98A8E9F82179C878000053FE /* collectMoney@2x.png in Resources */,
+				98A8E9FE2179C878000053FE /* scanIcon@2x.png in Resources */,
 				98892511216DE7DF002750DC /* Assets.xcassets in Resources */,
+				98A8E9FF2179C878000053FE /* transferMoney@2x.png in Resources */,
+				98A8EA172179DB76000053FE /* MJRefresh.bundle in Resources */,
 				9889250F216DE7D3002750DC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,25 +603,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				98A8E9CF217974EA000053FE /* UINavigationBar+ChangeColor.m in Sources */,
+				98A8EA192179DB76000053FE /* MJRefreshConst.m in Sources */,
 				988DC5C1217436A600298A1D /* MJUser.m in Sources */,
+				98A8EA1E2179DB76000053FE /* UIView+MJExtension.m in Sources */,
 				988DC5B5217432D600298A1D /* NSObject+MJCoding.m in Sources */,
+				98A8EA022179D08B000053FE /* PayCollectionViewCell.m in Sources */,
 				988DC5B3217432D600298A1D /* MJPropertyType.m in Sources */,
+				98A8EA1A2179DB76000053FE /* MJRefreshFooterView.m in Sources */,
 				98A8E9D52179797A000053FE /* HiddenNavController.m in Sources */,
+				98A8EA1C2179DB76000053FE /* UIScrollView+MJExtension.m in Sources */,
 				988DC5CA21743BC700298A1D /* MJBag.m in Sources */,
 				988DC5AF217432D600298A1D /* MJExtensionConst.m in Sources */,
 				988DC5C721743B9100298A1D /* MJStudent.m in Sources */,
+				98A8E9DE2179B03B000053FE /* AliPayController.m in Sources */,
 				988DC5B2217432D600298A1D /* MJPropertyKey.m in Sources */,
 				988DC5B6217432D600298A1D /* NSObject+MJKeyValue.m in Sources */,
 				988DC5962174326800298A1D /* MJExtensionYController.m in Sources */,
+				98A8E9E22179B397000053FE /* UIView+Frame.m in Sources */,
+				98A8EA052179D854000053FE /* NaView.m in Sources */,
 				988DB973216EDA5C005018AB /* CellAnimationController.m in Sources */,
 				988DC5B0217432D600298A1D /* MJFoundation.m in Sources */,
 				986A39582176C2EC003FF1BB /* DrawController.m in Sources */,
+				98A8EA1B2179DB76000053FE /* MJRefreshHeaderView.m in Sources */,
+				98A8EA182179DB76000053FE /* MJRefreshBaseView.m in Sources */,
+				98A8EA1D2179DB76000053FE /* UIScrollView+MJRefresh.m in Sources */,
 				988DC5B8217432D600298A1D /* NSString+MJExtension.m in Sources */,
 				988DC5BB217435ED00298A1D /* MJStatusResult.m in Sources */,
 				986A395E2176D5DE003FF1BB /* MOdalPopController.m in Sources */,
 				98A8E9D821797F9B000053FE /* UINavigationBar+Awesome.m in Sources */,
 				988DC5B1217432D600298A1D /* MJProperty.m in Sources */,
 				9889250C216DE7D3002750DC /* ViewController.m in Sources */,
+				98A8E9E82179C780000053FE /* HeadBtnView.m in Sources */,
 				988DC5C42174377000298A1D /* MJAd.m in Sources */,
 				988DB976216EF5C8005018AB /* NetWorkController.m in Sources */,
 				98A8E9CC21797225000053FE /* ScrollCellHidddenController.m in Sources */,
@@ -665,7 +819,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5CRL8ZT54A;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/cellAnimation/CellPch.pch";
 				INFOPLIST_FILE = cellAnimation/Info.plist;
@@ -685,7 +839,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5CRL8ZT54A;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/cellAnimation/CellPch.pch";
 				INFOPLIST_FILE = cellAnimation/Info.plist;

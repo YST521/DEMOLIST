@@ -17,6 +17,7 @@
 #import "ScrollCellHidddenController.h"
 #import "HIdeenNavigationController.h"
 #import "HiddenNavController.h"
+#import "AliPayController.h"
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
@@ -41,7 +42,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.titleArr = @[@"cell动画",@"单行cell的动画",@"网络监听",@"侧滑删除",@"mjextension",@"draw",@"模态弹框",@"cell上拉显示导航栏1",@"cell上拉显示导航栏2",@"cell上拉显示导航栏3"];
+    self.titleArr = @[@"cell动画",@"单行cell的动画",@"网络监听",@"侧滑删除",@"mjextension",@"draw",@"模态弹框",@"cell上拉显示导航栏1",@"cell上拉显示导航栏2",@"cell上拉显示导航栏3",@"支付宝首页"];
     self.navigationItem.title = @"cell的常见使用方法";
     
     tabView = [[UITableView alloc]initWithFrame:CGRectMake(0, 80, self.view.frame.size.width, self.view.frame.size.height-80) style:(UITableViewStylePlain)];
@@ -118,8 +119,6 @@
         
             [self presentAnimal]; //跳转动画
             [self.navigationController presentViewController:popVC animated:NO completion:nil];
-       
-     
     }
     
     
@@ -136,6 +135,12 @@
         HiddenNavController *VC = [[HiddenNavController  alloc]init];
         [self.navigationController pushViewController:VC animated:YES];
     }
+    if (indexPath.row == 10) {
+        AliPayController *VC = [[AliPayController  alloc]init];
+        VC.navigationItem.hidesBackButton = YES;
+        [self.navigationController pushViewController:VC animated:YES];
+    }
+    
 }
 -(void)presentAnimal{
     CATransition *animation = [CATransition animation];
