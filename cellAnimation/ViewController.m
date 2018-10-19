@@ -14,6 +14,9 @@
 #import "MJExtensionYController.h"
 #import "DrawController.h"
 #import "MOdalPopController.h"
+#import "ScrollCellHidddenController.h"
+#import "HIdeenNavigationController.h"
+#import "HiddenNavController.h"
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
@@ -38,7 +41,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.titleArr = @[@"cell动画",@"单行cell的动画",@"网络监听",@"侧滑删除",@"mjextension",@"draw",@"模态弹框"];
+    self.titleArr = @[@"cell动画",@"单行cell的动画",@"网络监听",@"侧滑删除",@"mjextension",@"draw",@"模态弹框",@"cell上拉显示导航栏1",@"cell上拉显示导航栏2",@"cell上拉显示导航栏3"];
     self.navigationItem.title = @"cell的常见使用方法";
     
     tabView = [[UITableView alloc]initWithFrame:CGRectMake(0, 80, self.view.frame.size.width, self.view.frame.size.height-80) style:(UITableViewStylePlain)];
@@ -119,6 +122,20 @@
      
     }
     
+    
+    if (indexPath.row == 7) {
+        ScrollCellHidddenController *VC = [[ScrollCellHidddenController  alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }
+    if (indexPath.row == 8) {
+      HIdeenNavigationController *VC = [[HIdeenNavigationController  alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }
+    
+    if (indexPath.row == 9) {
+        HiddenNavController *VC = [[HiddenNavController  alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }
 }
 -(void)presentAnimal{
     CATransition *animation = [CATransition animation];

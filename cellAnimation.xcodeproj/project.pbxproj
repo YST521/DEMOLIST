@@ -43,6 +43,12 @@
 		988DC5C42174377000298A1D /* MJAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 988DC5C22174377000298A1D /* MJAd.m */; };
 		988DC5C721743B9100298A1D /* MJStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 988DC5C621743B9100298A1D /* MJStudent.m */; };
 		988DC5CA21743BC700298A1D /* MJBag.m in Sources */ = {isa = PBXBuildFile; fileRef = 988DC5C821743BC700298A1D /* MJBag.m */; };
+		98A8E9CC21797225000053FE /* ScrollCellHidddenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A8E9CB21797225000053FE /* ScrollCellHidddenController.m */; };
+		98A8E9CF217974EA000053FE /* UINavigationBar+ChangeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A8E9CD217974E3000053FE /* UINavigationBar+ChangeColor.m */; };
+		98A8E9D2217976F6000053FE /* HIdeenNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A8E9D1217976F6000053FE /* HIdeenNavigationController.m */; };
+		98A8E9D52179797A000053FE /* HiddenNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A8E9D42179797A000053FE /* HiddenNavController.m */; };
+		98A8E9D821797F9B000053FE /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A8E9D621797F9A000053FE /* UINavigationBar+Awesome.m */; };
+		98A8E9DA217980D0000053FE /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 98A8E9D9217980D0000053FE /* bg.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +142,17 @@
 		988DC5C621743B9100298A1D /* MJStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJStudent.m; sourceTree = "<group>"; };
 		988DC5C821743BC700298A1D /* MJBag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJBag.m; sourceTree = "<group>"; };
 		988DC5C921743BC700298A1D /* MJBag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJBag.h; sourceTree = "<group>"; };
+		98A8E9CA21797225000053FE /* ScrollCellHidddenController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollCellHidddenController.h; sourceTree = "<group>"; };
+		98A8E9CB21797225000053FE /* ScrollCellHidddenController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollCellHidddenController.m; sourceTree = "<group>"; };
+		98A8E9CD217974E3000053FE /* UINavigationBar+ChangeColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+ChangeColor.m"; sourceTree = "<group>"; };
+		98A8E9CE217974E9000053FE /* UINavigationBar+ChangeColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+ChangeColor.h"; sourceTree = "<group>"; };
+		98A8E9D0217976F6000053FE /* HIdeenNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HIdeenNavigationController.h; sourceTree = "<group>"; };
+		98A8E9D1217976F6000053FE /* HIdeenNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HIdeenNavigationController.m; sourceTree = "<group>"; };
+		98A8E9D32179797A000053FE /* HiddenNavController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HiddenNavController.h; sourceTree = "<group>"; };
+		98A8E9D42179797A000053FE /* HiddenNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HiddenNavController.m; sourceTree = "<group>"; };
+		98A8E9D621797F9A000053FE /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
+		98A8E9D721797F9B000053FE /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		98A8E9D9217980D0000053FE /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +205,11 @@
 		98892506216DE7D3002750DC /* cellAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				98A8E9D9217980D0000053FE /* bg.jpg */,
+				98A8E9D721797F9B000053FE /* UINavigationBar+Awesome.h */,
+				98A8E9D621797F9A000053FE /* UINavigationBar+Awesome.m */,
+				98A8E9CE217974E9000053FE /* UINavigationBar+ChangeColor.h */,
+				98A8E9CD217974E3000053FE /* UINavigationBar+ChangeColor.m */,
 				988DC597217432D600298A1D /* MJExtension */,
 				988DB977216EF72D005018AB /* Reachability.h */,
 				988DB978216EF72D005018AB /* Reachability.m */,
@@ -211,6 +233,12 @@
 				986A395A2176C302003FF1BB /* DrawView.m */,
 				986A395C2176D5DE003FF1BB /* MOdalPopController.h */,
 				986A395D2176D5DE003FF1BB /* MOdalPopController.m */,
+				98A8E9CA21797225000053FE /* ScrollCellHidddenController.h */,
+				98A8E9CB21797225000053FE /* ScrollCellHidddenController.m */,
+				98A8E9D0217976F6000053FE /* HIdeenNavigationController.h */,
+				98A8E9D1217976F6000053FE /* HIdeenNavigationController.m */,
+				98A8E9D32179797A000053FE /* HiddenNavController.h */,
+				98A8E9D42179797A000053FE /* HiddenNavController.m */,
 				986A395F2176DA59003FF1BB /* CellPch.pch */,
 				986A39602176DA60003FF1BB /* Header.h */,
 				988DC5CB21746E3B00298A1D /* mjExtension */,
@@ -403,6 +431,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98A8E9DA217980D0000053FE /* bg.jpg in Resources */,
 				988DC5AE217432D600298A1D /* Info.plist in Resources */,
 				98892514216DE7DF002750DC /* LaunchScreen.storyboard in Resources */,
 				98892511216DE7DF002750DC /* Assets.xcassets in Resources */,
@@ -431,9 +460,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98A8E9CF217974EA000053FE /* UINavigationBar+ChangeColor.m in Sources */,
 				988DC5C1217436A600298A1D /* MJUser.m in Sources */,
 				988DC5B5217432D600298A1D /* NSObject+MJCoding.m in Sources */,
 				988DC5B3217432D600298A1D /* MJPropertyType.m in Sources */,
+				98A8E9D52179797A000053FE /* HiddenNavController.m in Sources */,
 				988DC5CA21743BC700298A1D /* MJBag.m in Sources */,
 				988DC5AF217432D600298A1D /* MJExtensionConst.m in Sources */,
 				988DC5C721743B9100298A1D /* MJStudent.m in Sources */,
@@ -446,13 +477,16 @@
 				988DC5B8217432D600298A1D /* NSString+MJExtension.m in Sources */,
 				988DC5BB217435ED00298A1D /* MJStatusResult.m in Sources */,
 				986A395E2176D5DE003FF1BB /* MOdalPopController.m in Sources */,
+				98A8E9D821797F9B000053FE /* UINavigationBar+Awesome.m in Sources */,
 				988DC5B1217432D600298A1D /* MJProperty.m in Sources */,
 				9889250C216DE7D3002750DC /* ViewController.m in Sources */,
 				988DC5C42174377000298A1D /* MJAd.m in Sources */,
 				988DB976216EF5C8005018AB /* NetWorkController.m in Sources */,
+				98A8E9CC21797225000053FE /* ScrollCellHidddenController.m in Sources */,
 				986A395B2176C302003FF1BB /* DrawView.m in Sources */,
 				988DB979216EF72E005018AB /* Reachability.m in Sources */,
 				988DC5BE217435F900298A1D /* MJStatus.m in Sources */,
+				98A8E9D2217976F6000053FE /* HIdeenNavigationController.m in Sources */,
 				98892517216DE7DF002750DC /* main.m in Sources */,
 				988DC5B7217432D600298A1D /* NSObject+MJProperty.m in Sources */,
 				9889253B216DEA11002750DC /* CellDelectController.m in Sources */,
