@@ -14,6 +14,7 @@
 #import "NaView.h"
 #import "MJRefresh.h"
 
+
 #define NAVBAR_CHANGE_POINT 50
 
 
@@ -36,21 +37,24 @@ static  NSString *cellID = @"AliPayControllerCellID";
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationController.delegate = self;
+    
+
     [self creatUI];
     
-   __weak __typeof(self)weakSelf = self;    //1
-    [self.tabView addHeaderWithCallback:^{
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-           
-            [weakSelf.tabView headerEndRefreshing];
+   __weak __typeof(self)weakSelf = self;
+    self.tabView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+              [weakSelf.tabView setContentOffset:CGPointMake(0, 0)];
+            [weakSelf.tabView.mj_header endRefreshing];
         });
     }];
-    
 
     //这个demoz仅做了简单处理 高度适配和细节均未处理
     //结构 scrollView 上 + headView +tableVIew
     // headV 上 +4个btn + collectView
     //导航栏隐藏 用自定义View代替 通过滑动距离改变自定义View的透明度
+    
+  
 }
 
 -(void)creatUI{
@@ -61,7 +65,9 @@ static  NSString *cellID = @"AliPayControllerCellID";
     [self.view addSubview:self.scrollV];
     [self.scrollV addSubview:self.headV];
     [self.scrollV addSubview:self.tabView];
+//    self.tabView.tableHeaderView = self.headV;
     [self.view addSubview:self.customNav]; //此处最好自定义View
+    self.tabView.scrollIndicatorInsets = self.tabView.contentInset;
 
     self.scrollV.contentSize = CGSizeMake(SCREEN_WIDTH, SCREEN_HIGHT*2);
     
@@ -73,7 +79,7 @@ static  NSString *cellID = @"AliPayControllerCellID";
     self.tabView.scrollEnabled = NO;//禁止tabview上下滑动
     self.tabView.delegate = self;
     self.tabView.dataSource = self;
-    [self.tabView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cellID"];
+//    [self.tabView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cellID"];
     
     if (@available(iOS 11.0, *)) {
         self.scrollV.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
@@ -172,20 +178,43 @@ static  NSString *cellID = @"AliPayControllerCellID";
             navView.hidden = NO;
             self.customNav.alpha = alpha;
             navView.alpha = alpha;
-             self.tabView.scrollEnabled = NO;
-        
+           
+       
         } else {
             
-            self.tabView.scrollEnabled = YES;
             navView.hidden = YES;
             self.customNav.alpha = 0;
             navView.alpha = 0;
         }
     }
+    
+//    [self.scrollV setContentOffset:CGPointMake(0, 0)];
+//      self.scrollV.bounces = NO;
+   
+    
+    if(self.scrollV.contentOffset.y < 0){
+       self.scrollV.scrollEnabled = NO;
 
+
+     }else if(self.scrollV.contentOffset.y == 0){
+      self.scrollV.scrollEnabled = YES;
+  
+     }else{
+         self.scrollV.scrollEnabled = YES;
+
+     }
+
+    self.tabView.scrollEnabled = YES;
+    
+    NSLog(@"-- %f=== %f",self.scrollV.contentOffset.y,self.tabView.contentOffset.y);
+
+    
     //防止手势干扰
     self.tabView.showsVerticalScrollIndicator = self.scrollV?YES:NO;
+    
+   
 }
+
 
 
 #pragma mark - collectionView
@@ -198,10 +227,15 @@ static  NSString *cellID = @"AliPayControllerCellID";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+   
    PayCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collect" forIndexPath:indexPath];
     cell.title.text = @"余额宝";
     cell.imgV.image = [UIImage imageNamed:@"transferMoney"];
     return cell;
+}
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+        [self.navigationController popViewControllerAnimated:YES];
 }
 //
 //- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
@@ -212,15 +246,24 @@ static  NSString *cellID = @"AliPayControllerCellID";
 
 
 #pragma mark -UITableViewDelegate
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 20;
+    return 10;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 80;
+   
+    //高度 需要计算 不滚动
+    CGFloat hh = SCREEN_HIGHT *2 - (self.headV.bottom+5);
+    return hh/10;
 }
+
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [self.tabView dequeueReusableCellWithIdentifier:cellID];
-    
+//    UITableViewCell *cell = [self.tabView dequeueReusableCellWithIdentifier:cellID];
+ UITableViewCell *cell = [self.tabView cellForRowAtIndexPath:indexPath];
     if (!cell) {
         cell = [[UITableViewCell alloc]initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:cellID];
     }
@@ -235,7 +278,7 @@ static  NSString *cellID = @"AliPayControllerCellID";
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    [self.navigationController popViewControllerAnimated:YES];
+
 }
 
 #pragma mark -layzUI
@@ -256,6 +299,7 @@ static  NSString *cellID = @"AliPayControllerCellID";
 -(UITableView *)tabView{
     if (!_tabView) {
         _tabView = [[UITableView alloc]initWithFrame:CGRectMake(0, self.headV.bottom+5, SCREEN_WIDTH, SCREEN_HIGHT*2-(self.headV.bottom+5)) style:(UITableViewStylePlain)];
+        
     }
     return _tabView;
 }
